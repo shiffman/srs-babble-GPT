@@ -19,7 +19,7 @@ async function init() {
     const device = navigator.gpu ? 'webgpu' : 'wasm';
     // import Transformers.js library from CDN
     const { pipeline, env } = await import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.4.0');
-    const modelId = 'shiffman/model-gpt2-srs-all';
+    const modelId = 'shiffman/model-gpt2-srs';
 
     // Show loading status to user
     setStatus(status, progressBar, 'initializing…', null);
